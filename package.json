@@ -1,11 +1,15 @@
 {
-  "name": "github-repo-list",
-  "version": "1.0.0",
-  "main": "index.js",
-  "repository": "git@github.com:vogelino/github-repo-list.git",
-  "author": "vogelino <contact@vogelino.com>",
-  "license": "MIT",
-  "dependencies": {
-    "next": "^1.2.3"
-  }
+	"engines": {
+		"node": "7.1.0",
+		"yarn": "0.21.3" 
+	},
+	"name": "github-repo-list",
+	"version": "1.0.0",
+	"main": "index.js",
+	"repository": "git@github.com:vogelino/github-repo-list.git",
+	"author": "vogelino <contact@vogelino.com>",
+	"license": "MIT",
+	"dependencies": {
+		"next": "^1.2.3"
+	}
 }
