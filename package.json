@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:vogelino/github-repo-list.git",
   "author": "vogelino <contact@vogelino.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "next": "^1.2.3"
+  }
 }
