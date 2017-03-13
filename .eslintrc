@@ -13,7 +13,7 @@
     "react/jsx-indent-props": [2, 'tab'],
     "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
     "no-tabs": "off",
-    "comma-dangle": ["error", "always"],
+    "comma-dangle": ["error", "always-multiline"],
     "arrow-parens": ["error", "always"],
     "brace-style": ["error", "stroustrup"],
 	"import/prefer-default-export": "off"
