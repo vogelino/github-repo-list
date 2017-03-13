@@ -1,5 +1,3 @@
-import { PropTypes } from 'react';
-
 const capitalize = (stringToCapitalize) => stringToCapitalize
 	.split('')
 	.map((character, index) => (index === 0 ? character.toUpperCase() : character))
@@ -35,22 +33,6 @@ export const cleanRepoFields = ({
 	language,
 	openIssues,
 });
-
-export const repoPropTypes = {
-	title: PropTypes.string.isRequired,
-	name: PropTypes.string.isRequired,
-	id: PropTypes.number.isRequired,
-	description: PropTypes.string,
-	url: PropTypes.string.isRequired,
-	creationDate: PropTypes.string.isRequired,
-	lastUpdateDate: PropTypes.string.isRequired,
-	homepage: PropTypes.string,
-	size: PropTypes.number.isRequired,
-	stars: PropTypes.number.isRequired,
-	watchers: PropTypes.number.isRequired,
-	language: PropTypes.string,
-	openIssues: PropTypes.number.isRequired,
-};
 
 export const sortByStars = (order) => (
 	order === 'ASC' ?
