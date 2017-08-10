@@ -4,8 +4,7 @@ import Anchor from '../atoms/Anchor';
 
 const Container = styled.div`
 	display: block;
-	margin: 40px 0;
-	height: 40px;
+	margin: 20px 0;
 `;
 
 const Avatar = styled.img`
@@ -19,7 +18,6 @@ const Avatar = styled.img`
 
 const UserName = styled.h1`
 	margin: 0;
-	height: 40px;
 	padding: 3px 0;
 	font-size: 24px;
 	font-weight: 300;
