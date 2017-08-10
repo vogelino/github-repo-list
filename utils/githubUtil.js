@@ -42,3 +42,17 @@ export const sortByStars = (order) => (
 
 export const isRepoPublic = ({ isPublic }) => Boolean(isPublic);
 
+export const cleanOwner = ({
+	avatar_url: avatarUrl,
+	gists_url: gistsUrl,
+	id,
+	login,
+	html_url: htmlUrl,
+}) => ({
+	avatarUrl,
+	gistsUrl,
+	id,
+	login,
+	htmlUrl,
+});
+
