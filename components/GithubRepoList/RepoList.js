@@ -1,10 +1,17 @@
 import React, { PropTypes } from 'react';
+import styled from 'styled-components';
 import RepoListItem, { repoPropTypes } from './RepoListItem';
 
+const List = styled.ul`
+	list-style: none;
+	margin: 0;
+	padding: 0;
+`;
+
 const RepoList = ({ repos }) => (
-	<ul className="repo-list">
+	<List>
 		{repos.map((repo) => <RepoListItem key={repo.id} {...repo} />)}
-	</ul>
+	</List>
 );
 
 RepoList.defaultProps = {
@@ -16,4 +23,3 @@ RepoList.propTypes = {
 };
 
 export default RepoList;
-

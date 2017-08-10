@@ -1,7 +1,12 @@
 import React, { Component, PropTypes } from 'react';
+import styled from 'styled-components';
 import { isRepoPublic, cleanRepoFields, sortByStars, cleanOwner } from '../../utils/githubUtil';
 import RepoList from './RepoList';
 import RepoOwner from './RepoOwner';
+
+const ListContainer = styled.article`
+	font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+`;
 
 class GithubRepoList extends Component {
 	constructor(props) {
@@ -26,10 +31,10 @@ class GithubRepoList extends Component {
 	render() {
 		const { repos, owner } = this.state;
 		return (
-			<div className={`github-repo-list user-${this.props.userName}`}>
+			<ListContainer id={`user-${this.props.userName}`}>
 				{ owner && <RepoOwner {...owner} /> }
 				{ repos && <RepoList repos={repos} /> }
-			</div>
+			</ListContainer>
 		);
 	}
 }
@@ -39,4 +44,3 @@ GithubRepoList.propTypes = {
 };
 
 export default GithubRepoList;
-
